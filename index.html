@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Construí tu imperio beauty · Nivel 1 · by SamCe</title>
+<meta name="description" content="Primeros pasos para formar tu propia empresa de estética. Una guía simple para ordenar tu gabinete, conseguir clientas y lograr que vuelvan.">
+<meta property="og:title" content="Construí tu imperio beauty · by SamCe">
+<meta property="og:description" content="Primeros pasos para formar tu propia empresa de estética.">
+<meta property="og:image" content="img/tapa.jpg">
+<style>
+@font-face{font-family:'Play';font-weight:500;src:url(fonts/playfair-display-latin-500-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Play';font-weight:600;src:url(fonts/playfair-display-latin-600-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Play';font-weight:900;src:url(fonts/playfair-display-latin-900-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Play';font-weight:500;font-style:italic;src:url(fonts/playfair-display-latin-500-italic.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Play';font-weight:700;font-style:italic;src:url(fonts/playfair-display-latin-700-italic.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Hand';font-weight:600;src:url(fonts/caveat-latin-600-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Inter';font-weight:400;src:url(fonts/inter-latin-400-normal.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'Inter';font-weight:600;src:url(fonts/inter-latin-600-normal.woff2) format('woff2');font-display:swap}
+:root{--ink:#4B3A33;--cream:#F8F4EE;--wine:#7E2F45;--rose:#B0707A;--blush:#F2C4C0;--pink:#F4E2DE;--sage:#E7EAD7;--sand:#F6E9C9;--mauve:#F0DEE5;--quiet:#6F5F57}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+p,h1,h2,h3{margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.hand{font-family:'Hand';font-weight:600;color:var(--rose)}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-family:'Hand';font-weight:600;font-size:32px;color:var(--rose);text-decoration:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:2px solid var(--wine);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.main{background:var(--wine);color:#fff}
+.btn.alt{background:transparent;color:var(--wine)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:30px 0 80px}
+.pill{display:inline-block;background:var(--rose);color:#fff;font-size:13px;font-weight:600;letter-spacing:3px;text-transform:uppercase;padding:7px 16px;border-radius:999px}
+.t1{font-family:'Play';font-weight:600;font-size:clamp(22px,3.4vw,36px);letter-spacing:4px;text-transform:uppercase;margin-top:22px}
+.t2{font-family:'Play';font-weight:900;font-size:clamp(54px,10vw,118px);line-height:.92;color:var(--wine);letter-spacing:-2px}
+.t3{font-family:'Play';font-style:italic;font-weight:700;font-size:clamp(46px,7.5vw,88px);line-height:1;display:inline-block;transform:rotate(-4deg);position:relative;margin:4px 0 0 6px}
+.t3::before{content:'';position:absolute;left:-12px;right:-14px;bottom:12px;height:34%;background:var(--blush);z-index:-1;border-radius:8px 20px 10px 22px;transform:rotate(2deg)}
+.lead{font-size:19px;max-width:500px;margin:28px 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative;padding:20px}
+.hero-img::before{content:'';position:absolute;inset:0 40px 60px 60px;border-radius:200px 200px 30px 30px;background:var(--pink)}
+.hero-img::after{content:'';position:absolute;width:110px;height:110px;border-radius:50%;background:var(--sand);right:0;top:0}
+.hero-img img{position:relative;z-index:1;border-radius:18px;box-shadow:0 18px 50px rgba(75,58,51,.18);transform:rotate(2deg);width:100%;max-width:min(420px,100%);margin:0 auto}
+.note{position:absolute;z-index:2;left:0;bottom:30px;font-family:'Hand';font-weight:600;font-size:30px;color:var(--wine);transform:rotate(-6deg);background:#fff;padding:4px 16px;border-radius:12px;box-shadow:0 4px 14px rgba(75,58,51,.12)}
+/* secciones */
+section{padding:70px 0}
+.sh{font-family:'Play';font-weight:600;font-size:clamp(32px,4.6vw,44px);line-height:1.15;margin-bottom:10px}
+.sh em{font-style:italic;color:var(--wine)}
+.ss{color:var(--quiet);font-size:18px;max-width:620px;margin-bottom:34px}
+.band{background:#fff}
+.forwho{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.fw{background:var(--cream);border-radius:22px 18px 24px 16px;padding:24px}
+.fw .hand{font-size:28px;line-height:1.1;display:block;margin-bottom:6px}
+.chapters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.ch{border-radius:24px 18px 22px 20px;padding:24px 20px;min-height:200px;display:flex;flex-direction:column;gap:8px}
+.ch:nth-child(1){background:var(--pink)} .ch:nth-child(2){background:var(--sage);transform:translateY(12px)}
+.ch:nth-child(3){background:var(--sand)} .ch:nth-child(4){background:var(--mauve);transform:translateY(12px)}
+.ch:nth-child(5){background:#E3DFF1}
+.ch b{font-family:'Play';font-style:italic;font-weight:500;font-size:44px;line-height:1;color:var(--wine)}
+.ch h3{font-family:'Play';font-weight:600;font-size:20px;line-height:1.25}
+.ch p{font-size:15px;color:var(--quiet)}
+.inside{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+.inside figure{margin:0}
+.inside img{border-radius:14px;box-shadow:0 10px 30px rgba(75,58,51,.14)}
+.inside figure:nth-child(2){transform:translateY(24px)}
+.inside figcaption{font-family:'Hand';font-weight:600;font-size:24px;color:var(--rose);text-align:center;margin-top:12px}
+.extras{display:flex;flex-wrap:wrap;gap:12px;margin-top:60px}
+.extras span{background:#fff;border:1.5px solid #E2D6CA;border-radius:999px;padding:10px 20px;font-weight:600;font-size:15px}
+.extras span::before{content:'✓ ';color:var(--wine)}
+/* compra */
+.buy{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.card{background:#fff;border-radius:30px;padding:38px;border:2px solid var(--wine);position:relative}
+.tape{position:absolute;top:-16px;left:50%;width:130px;height:30px;background:var(--blush);opacity:.9;transform:translateX(-50%) rotate(-3deg)}
+.price{font-family:'Play';font-weight:900;font-size:58px;color:var(--wine);line-height:1}
+.launch{font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin:6px 0 18px}
+.card ul{margin:0 0 26px;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.card li{padding-left:28px;position:relative}
+.card li::before{content:'';position:absolute;left:0;top:11px;width:16px;height:2.5px;border-radius:2px;background:var(--wine);transform:rotate(-8deg)}
+.card .btn{width:100%}
+.small{font-size:14px;color:var(--quiet);margin-top:14px}
+.about{background:var(--pink);border-radius:30px;padding:36px 38px;display:flex;flex-direction:column;gap:14px}
+.about .big{font-family:'Hand';font-weight:600;font-size:46px;color:var(--wine);line-height:1;transform:rotate(-3deg);transform-origin:left}
+.about p+p{margin-top:10px}
+.faq details{background:#fff;border-radius:20px;padding:18px 24px;margin-bottom:12px}
+.faq summary{font-weight:600;font-size:17px;cursor:pointer}
+.faq p{margin-top:10px;color:var(--quiet)}
+.next{text-align:center}
+.next .t2{font-size:clamp(48px,7vw,80px)}
+footer{padding:40px 0 60px;text-align:center;color:var(--quiet);font-size:15px}
+footer .logo{display:block;margin-bottom:4px}
+@media (max-width:860px){
+.hero,.buy{grid-template-columns:minmax(0,1fr);gap:36px}
+.forwho,.inside{grid-template-columns:1fr}
+.chapters{grid-template-columns:1fr 1fr}
+.ch:nth-child(n){transform:none}
+.inside figure:nth-child(2){transform:none}
+.about{grid-template-columns:1fr;padding:30px}
+.note{font-size:22px}
+.hero-img::after{width:80px;height:80px}
+.chapters{grid-template-columns:1fr}
+.card{padding:30px 24px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#">by SamCe</a>
+<a class="btn alt" href="#comprar">Comprar</a>
+</header>
+
+<div class="hero">
+<div>
+<span class="pill">Nivel 1 · Para empezar</span>
+<p class="t1">Construí tu</p>
+<h1 class="t2">IMPERIO</h1>
+<p class="t3">beauty.</p>
+<p class="lead">Primeros pasos para formar tu propia empresa de estética. Una guía simple para ordenar tu gabinete, conseguir clientas y lograr que vuelvan, sin vueltas ni tecnicismos.</p>
+<div class="cta">
+<a class="btn main" href="#comprar">Quiero la guía</a>
+<a class="btn alt" href="muestra-gratis.pdf" download>Descargar muestra gratis</a>
+</div>
+</div>
+<div class="hero-img">
+<img src="img/tapa.jpg" alt="Tapa del ebook Construí tu imperio beauty">
+<p class="note">¡10 minutos por capítulo!</p>
+</div>
+</div>
+</div>
+
+<section class="band">
+<div class="wrap">
+<h2 class="sh">¿Es para <em>vos</em>?</h2>
+<p class="ss">Si te identificás con alguna de estas, esta guía te va a ayudar.</p>
+<div class="forwho">
+<div class="fw"><span class="hand">Estás empezando</span>Te recibiste de cosmetóloga, esteticista, lashista o manicura y querés atender por tu cuenta.</div>
+<div class="fw"><span class="hand">Tenés clientas, pero no orden</span>La agenda tiene huecos, te faltan clientas o te cuesta que vuelvan.</div>
+<div class="fw"><span class="hand">No sabés de negocios</span>No hace falta saber de administración ni de números: está todo explicado en palabras simples.</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<h2 class="sh">Lo que vas a <em>aprender</em></h2>
+<p class="ss">5 capítulos cortos. Cada uno termina con tres tareas concretas para hacer esa misma semana.</p>
+<div class="chapters">
+<div class="ch"><b>1</b><h3>La experiencia de tu clienta</h3><p>Los 4 momentos de la primera visita que hacen que vuelva.</p></div>
+<div class="ch"><b>2</b><h3>Una agenda tranquila</h3><p>Turnos ordenados y cómo evitar que te falten.</p></div>
+<div class="ch"><b>3</b><h3>Conseguir clientas nuevas</h3><p>Las 5 fuentes que más funcionan, sin pagar publicidad.</p></div>
+<div class="ch"><b>4</b><h3>Que vuelvan</h3><p>Recordatorios y detalles que generan cariño.</p></div>
+<div class="ch"><b>5</b><h3>Instagram y WhatsApp, simple</h3><p>Qué publicar y cómo cerrar turnos por chat.</p></div>
+</div>
+</div>
+</section>
+
+<section class="band">
+<div class="wrap">
+<h2 class="sh">Mirá cómo es <em>por dentro</em></h2>
+<p class="ss">Diseñada para leerse fácil, con color, ejemplos y espacio para anotar.</p>
+<div class="inside">
+<figure><img src="img/muestra-visita.jpg" alt="Página sobre los 4 momentos de la primera visita"><figcaption>paso a paso</figcaption></figure>
+<figure><img src="img/muestra-agenda.jpg" alt="Página sobre cómo ordenar la agenda"><figcaption>ideas listas para aplicar</figcaption></figure>
+<figure><img src="img/muestra-plan.jpg" alt="Plan de acción de 30 días"><figcaption>tu plan de 30 días</figcaption></figure>
+</div>
+<div class="extras">
+<span>Plan de acción de 30 días</span>
+<span>Mensajes de WhatsApp para copiar</span>
+<span>Ficha de clienta lista para usar</span>
+<span>Tareas semanales en cada capítulo</span>
+</div>
+</div>
+</section>
+
+<section id="comprar">
+<div class="wrap buy">
+<div>
+<h2 class="sh">Empezá a construir <em>hoy</em></h2>
+<p class="ss">Un ebook en PDF que podés leer en el celular, la tablet o la compu, o imprimir.</p>
+<div class="about">
+<p class="big">hecho con amor</p>
+<div>
+<p>Esta guía nace de un estudio de belleza familiar que funciona desde 2007 y de mi formación en Gestión de Negocios.</p>
+<p>Junté lo que de verdad funciona en un gabinete real y lo conté en palabras simples, para que puedas aplicarlo desde el primer día.</p>
+<p class="hand" style="font-size:28px;margin-top:8px">Sami · by SamCe</p>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="tape"></div>
+<p class="hand" style="font-size:26px">Nivel 1 · Para empezar</p>
+<h3 class="sh" style="font-size:30px;margin:4px 0 14px">Construí tu imperio beauty</h3>
+<p class="price">$11.900</p>
+<p class="launch">Precio de lanzamiento</p>
+<ul>
+<li>Ebook en PDF de 15 páginas</li>
+<li>5 capítulos con tareas semanales</li>
+<li>Plan de acción de 30 días</li>
+<li>Ficha de clienta y mensajes para copiar</li>
+</ul>
+<a class="btn main" href="[LINK DE PAGO]" target="_blank" rel="noopener">Comprar ahora</a>
+<p class="small">Pagás con tarjeta de crédito, débito o Mercado Pago. Después del pago, te enviamos el PDF al mail que usaste para pagar en menos de 24 horas.</p>
+</div>
+</div>
+</section>
+
+<section class="faq band">
+<div class="wrap">
+<h2 class="sh">Preguntas <em>frecuentes</em></h2>
+<details><summary>¿Necesito saber de administración o de números?</summary><p>No. El Nivel 1 está pensado para empezar desde cero, sin fórmulas ni cuentas complicadas.</p></details>
+<details><summary>¿Sirve si ya tengo mi gabinete?</summary><p>Sí. Te ayuda a ordenar lo que ya hacés, llenar la agenda y lograr que tus clientas vuelvan.</p></details>
+<details><summary>¿Es un libro físico?</summary><p>No, es un PDF. Lo podés leer en cualquier dispositivo o imprimirlo.</p></details>
+<details><summary>¿Cómo lo recibo?</summary><p>Después de pagar, te lo enviamos al mail que usaste en Mercado Pago, en menos de 24 horas.</p></details>
+</div>
+</section>
+
+<section class="next">
+<div class="wrap">
+<span class="pill">Próximamente · Nivel 2</span>
+<p class="t1">Hacé crecer tu</p>
+<p class="t2">IMPERIO</p>
+<p class="ss" style="margin:18px auto 0">Tus números sin miedo: cuánto cobrar, cuánto te queda y cómo crecer.</p>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<span class="logo">by SamCe</span>
+Guías para profesionales de la belleza.
+</div>
+</footer>
+</body>
+</html>
